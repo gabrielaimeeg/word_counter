@@ -1,9 +1,9 @@
 $("#btnCount").click(function () {
-    let phase = $("#txtWords").val();
+    let phrase = $("#txtWords").val();
 
-if (isPhaseValid(phase)) {
-    let phaseCorrected = replaceAllowedPunctuation(phase);
-    showResult(phaseCorrected);
+if (isPhraseValid(phrase)) {
+    let phraseCorrected = replaceAllowedPunctuation(phrase);
+    showResult(phraseCorrected);
 }
 
 });
@@ -12,12 +12,12 @@ function showResult(phase) {
     $("#pResult").text("You've typed " + countWords(phase) + " words!");
 }
 
-function isPhaseValid(phase) {
+function isPhraseValid(phase) {
     return isTheTextValid(phase);
 }
 
-function replaceAllowedPunctuation(phase) {
-    return phase.replaceAll(",", "")
+function replaceAllowedPunctuation(phrase) {
+    return phrase.replaceAll(",", "")
         .replaceAll(".", "")
             .replaceAll(";", "")
                 .replaceAll("!", "")
@@ -28,21 +28,21 @@ function replaceAllowedPunctuation(phase) {
                                     .replaceAll(")", "");
 }
 
-function countWords(str) {
-    return str.trim().split(/\s+/).length;
+function countWords(phrase) {
+    return phrase.trim().split(/\s+/).length;
 }
-function isTheTextValid(phase) {
-    if(isTextAreaBlack(phase)){
+function isTheTextValid(phrase) {
+    if(isTextAreaBlack(phrase)){
         $("#pResult").text("You need to enter something first.")
         return false;
     }
 
-    if(isAnyOfTheWordsNumbers(phase)){
+    if(isAnyOfTheWordsNumbers(phrase)){
         $("#pResult").text("We do not understand numbers as words!")
         return false;
     }
 
-    if(isAnyOfTheWordsSpecialChars(phase)){
+    if(isAnyOfTheWordsSpecialChars(phrase)){
         $("#pResult").text("We do not understand these special characters as words: `@#$%^&*_+\\-=\\[\\]{};:\"\\\\|<>\\/~")
         return false;
     }
@@ -50,15 +50,15 @@ function isTheTextValid(phase) {
     return true;
 }
 
-function isTextAreaBlack(phase){
-    return phase === null || phase === '' || phase === "" || phase === 'undefined';
+function isTextAreaBlack(phrase){
+    return phrase === null || phrase === '' || phrase === "" || phrase === 'undefined';
 }
 
-function isAnyOfTheWordsNumbers(phase){
-    return /\d/.test(phase);
+function isAnyOfTheWordsNumbers(phrase){
+    return /\d/.test(phrase);
 }
 
-function isAnyOfTheWordsSpecialChars(phase){
+function isAnyOfTheWordsSpecialChars(phrase){
     let specialCharsNotAllowed = /[`#$%^&*_+\-=\[\]{}"\\|<>\/~]/;
-    return specialCharsNotAllowed.test(phase);
+    return specialCharsNotAllowed.test(phrase);
 }
