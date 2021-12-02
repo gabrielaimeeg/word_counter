@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="webjars/bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="resources/css/stylesheet.css" rel="stylesheet">
+  <title>Word Counter!</title>
+</head>
+<body>
+<div class="form-div">
+  <form class="form-counter">
+    <h2> Please, enter a phase</h2>
+    <p> Hi, this program counts how many words are in a phase.
+      We do not consider as words any numbers or special characters, except for punctuations as . , ; ! ? ' ( ) and :
+      but also doesn't count them as words. <br>Let's try it?</p>
+    <textarea id="txtWords" type="text" aria-label="textarea_counter" class="input-block-level" placeholder="Type something!"></textarea>
+    <button id="btnCount" class="btn btn-large btn-primary" type="button" >let's count it!</button>
+    <div>
+      <p id="pResult" />
+    </div>
+  </form>
+</div>
+<script src="webjars/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="webjars/popper.js/2.9.3/umd/popper.min.js" type="text/javascript"></script>
+<script src="webjars/bootstrap/5.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="resources/js/index.js" type="text/javascript"></script>
+</body>
+</html>

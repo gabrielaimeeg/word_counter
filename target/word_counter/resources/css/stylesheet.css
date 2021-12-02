@@ -1,0 +1,55 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+
+.form-counter {
+    display: block;
+    max-width: 50%;
+    padding: 6% 6% 6% 6%;
+    margin: 0 auto auto auto;
+    background-color: #fff;
+    border: 2px solid #d4d2d2;
+    -webkit-border-radius: 1%;
+    -moz-border-radius: 1%;
+    border-radius: 1%;
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+
+.form-counter textarea {
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    resize: vertical;
+    max-height: 150px;
+}
+
+.form-div {
+    font-family: Consolas, serif;
+    text-align: center;
+    display: inline;
+}
+
+.form-counter p{
+    font-size: small !important;
+    padding: 15px;
+    margin: 0;
+}
+
+.form-counter button {
+    background-color: darksalmon;
+}
+
+.form-counter .btn-primary {
+    background-color: darksalmon !important;
+    border-color: darksalmon !important;
+}
+
+.form-counter button:hover {
+    background-color: lightsalmon;
+    border-color: darksalmon;
+}
