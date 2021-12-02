@@ -17,3 +17,4 @@ cd word_counter
 ```sh
 java -jar target/dependency/webapp-runner.jar target/*.war
 ```
+It will be running in you localhost:8080
