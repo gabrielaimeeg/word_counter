@@ -1,4 +1,4 @@
-# README
+# README - Word Counter
 
 ## Heroku Link
 - https://wordcountervoxy.herokuapp.com/
