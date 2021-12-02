@@ -15,6 +15,10 @@ cd word_counter
 ```
 
 ```sh
+mvn compile
+```
+
+```sh
  java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port 8080 target/*.war
 ```
 It will be running in you localhost:8080
