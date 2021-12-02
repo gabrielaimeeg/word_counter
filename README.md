@@ -21,4 +21,4 @@ mvn compile
 ```sh
  java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port 8080 target/*.war
 ```
-It will be running in you localhost:8080
+It will be running in your localhost:8080
