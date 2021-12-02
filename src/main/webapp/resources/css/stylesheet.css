@@ -45,8 +45,8 @@ body {
 }
 
 .form-counter .btn-primary {
-    background-color: darksalmon !important;
-    border-color: darksalmon !important;
+    background-color: lightsalmon;
+    border-color: black;
 }
 
 .form-counter button:hover {
